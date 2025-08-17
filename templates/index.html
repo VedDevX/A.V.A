@@ -1,0 +1,45 @@
+<!-- ================================================== -->
+<!-- HTML DOCUMENT: index.html -->
+<!-- This is the frontend (UI) for our AI Virtual Assistant -->
+<!-- ================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Virtual Assistant</title>
+</head>
+
+<body>
+    <!-- MAIN CONTENT STARTS -->
+
+    <!-- Page heading -->
+    <h1>AI Virtual Assistant</h1>
+
+    <!-- ======================== -->
+    <!-- CHATBOT UI SECTION -->
+    <!-- ======================== -->
+
+    <h2>Chat with Assistant</h2>
+
+    <!-- Chat container -->
+    <div id="chat" style="border:1px solid #ccc; padding:10px; height:300px; overflow-y:auto;">
+        <!-- Messages will appear here -->
+    </div>
+
+    <!-- User input field -->
+    <input id="msg" type="text" placeholder="Say something" autocomplete="off">
+
+    <!-- Button to send message -->
+    <button id="sendBtn" onclick="sendChat()">Send</button>
+
+    <!-- ======================== -->
+    <!-- LINKING JAVASCRIPT -->
+    <!-- ======================== -->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

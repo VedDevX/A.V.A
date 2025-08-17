@@ -1,0 +1,9 @@
+Flask
+torch
+nltk
+numpy
+requests
+beautifulsoup4
+pyttsx3
+SpeechRecognition
+pyaudio
